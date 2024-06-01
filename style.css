@@ -1,31 +1,31 @@
 @font-face {
-  font-family: "LatoBold", sans-serif;
-  src: url("fonts/Lato-Bold.woff") format("woff");
+  font-family: 'LatoBold', sans-serif;
+  src: url('fonts/Lato-Bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: "LatoSemibold", sans-serif;
-  src: url("fonts/Lato-Semibold.woff") format("woff");
+  font-family: 'LatoSemibold', sans-serif;
+  src: url('fonts/Lato-Semibold.woff') format('woff');
 }
 
 @font-face {
-  font-family: "LatoMedium", sans-serif;
-  src: url("fonts/Lato-Medium.woff") format("woff");
+  font-family: 'LatoMedium', sans-serif;
+  src: url('fonts/Lato-Medium.woff') format('woff');
 }
 
 @font-face {
-  font-family: "MontserratBold", sans-serif;
-  src: url("fonts/Montserrat-Bold.woff") format("woff");
+  font-family: 'MontserratBold', sans-serif;
+  src: url('fonts/Montserrat-Bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: "MontserratSemibold", sans-serif;
-  src: url("fonts/Montserrat-SemiBold.woff") format("woff");
+  font-family: 'MontserratSemibold', sans-serif;
+  src: url('fonts/Montserrat-SemiBold.woff') format('woff');
 }
 
 @font-face {
-  font-family: "MontserratMedium", sans-serif;
-  src: url("fonts/Montserrat-Medium.woff") format("woff");
+  font-family: 'MontserratMedium', sans-serif;
+  src: url('fonts/Montserrat-Medium.woff') format('woff');
 }
 
 :root {
@@ -60,7 +60,7 @@ input {
   gap: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "MontserratMedium", sans-serif;
+  font-family: 'MontserratMedium', sans-serif;
   font-weight: 500;
   color: var(--black);
 }
@@ -184,7 +184,7 @@ body {
   left: 50%;
   background: #fff;
   bottom: -6px;
-  content: "";
+  content: '';
   -webkit-transition: all 280ms ease-in-out;
   -o-transition: all 280ms ease-in-out;
   transition: all 280ms ease-in-out;
@@ -203,7 +203,7 @@ body {
 
 .default-button {
   font-size: 18px;
-  font-family: "700", sans-serif;
+  font-family: '700', sans-serif;
   color: white;
   padding: 14px 20px;
   border-radius: 8px;
@@ -219,14 +219,14 @@ body {
   color: white;
   font-size: 24px;
   font-weight: 700;
-  font-family: "MontserratBold", sans-serif;
+  font-family: 'MontserratBold', sans-serif;
 }
 
 .button-small {
   border-radius: 20px;
   padding: 9px 27px;
   background-color: #d7537a;
-  font-family: "LatoRegular", sans-serif;
+  font-family: 'LatoRegular', sans-serif;
   font-weight: 400;
   color: white;
   text-align: center;
@@ -302,14 +302,14 @@ body {
 
 .banner__wrapper > h1 {
   margin-bottom: 10px;
-  font-family: "MontserratBold", sans-serif;
+  font-family: 'MontserratBold', sans-serif;
   font-weight: 700;
   letter-spacing: 2%;
 }
 
 .title {
   font-weight: 700;
-  font-family: " MontserratBold", sans-serif;
+  font-family: ' MontserratBold', sans-serif;
   color: var(--black);
   margin-bottom: 40px;
   text-align: left;
@@ -383,7 +383,7 @@ body {
   padding: 4px 6px;
   color: white;
   font-weight: 500;
-  font-family: "MontserratRegular", sans-serif;
+  font-family: 'MontserratRegular', sans-serif;
   font-size: 14px;
   width: 100%;
 }
@@ -403,7 +403,7 @@ body {
 .sales__item-title {
   font-size: 16px;
   font-weight: 500;
-  font-family: "MontserratRegular", sans-serif;
+  font-family: 'MontserratRegular', sans-serif;
   margin-bottom: 10px;
 }
 
@@ -426,7 +426,7 @@ body {
 }
 
 .why__item > p {
-  font-family: "LatoSemibold", sans-serif;
+  font-family: 'LatoSemibold', sans-serif;
   font-weight: 500;
   font-size: 24px;
   border-radius: 0 20px 20px 20px;
@@ -437,4 +437,61 @@ body {
   background-color: white;
   display: flex;
   justify-content: center;
+}
+
+.footer {
+  background-color: white;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer__info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 70px;
+}
+
+.footer__info > ul {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__info > ul > li:nth-child(1) {
+  color: var(--red);
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'LatoBold', sans-serif;
+  font-weight: 700;
+}
+
+.footer__info > ul > li,
+.footer__info > ul > li > a {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'LatoRegular', sans-serif;
+}
+
+/* media quariess */
+
+@media screen and (max-width: 768px) {
+  .footer__info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer__info > ul {
+    max-width: 100%;
+  }
 }
