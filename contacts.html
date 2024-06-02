@@ -53,7 +53,7 @@
           ></iframe>
           <div class="contacts__card-right">
             <div>
-              <h2>Bizi arayın</h2>
+              <h2 class="title">Bizi arayın</h2>
               <ul>
                 <li>
                   <img src="content/tel-icon.webp" alt="" /> <a href="tel:+902163281006">+902163281006</a>
@@ -61,7 +61,7 @@
               </ul>
             </div>
             <div>
-              <h2>Bizi nasıl buldunuz?</h2>
+              <h2 class="title">Bizi nasıl buldunuz?</h2>
               <ul>
                 <li>
                   <img src="content/geo-icon.webp" alt="" />
@@ -75,9 +75,15 @@
             </div>
           </div>
         </div>
-        <div class="contacts__form" id="form">
-          <h2 class="title">Şimdi arayın</h2>
-          <form action="success.html" class="contactsForm"></form>
+        <div class="contacts__form paddingSection" id="form">
+          <h2 class="title contacts__form-title">Şimdi arayın</h2>
+          <form action="success.html" class="">
+            <input type="text" name="" placeholder="İsim" required id="" />
+            <input type="email" name="" placeholder="E-posta" required id="" />
+            <input type="number" placeholder="Telefon numarası" required />
+            <button type="submit" class="button" href="success.html">Gönder</button>
+            <button type="submit" class="button-small" href="success.html">Gönder</button>
+          </form>
         </div>
       </div>
     </section>
