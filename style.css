@@ -461,7 +461,7 @@ body {
   margin-top: 130px;
 }
 .why__wrapper > .why__item:nth-child(2) > p {
-  right: 640px;
+  left: 550px;
 }
 
 .why__item > img {
@@ -638,6 +638,7 @@ body {
   width: 100%;
   margin-bottom: 40px;
   background: white;
+  height: 900px;
 }
 
 .delivery__decor {
@@ -920,7 +921,53 @@ body {
 
 /* media quariess */
 
+@media screen and (max-width: 1440px) {
+  .sales__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .why__item > img {
+    width: 463px;
+    height: 525px;
+  }
+  .why__item > p {
+    width: 470px;
+    padding: 56px 25px;
+    right: 350px;
+    margin-top: 180px;
+  }
+  .why__wrapper > .why__item:nth-child(2) > p {
+    left: 550px;
+    margin-top: 150px;
+  }
+  .for__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .delivery__content {
+    padding: 90px 140px;
+  }
+  .services__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .delivery {
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .delivery__content {
+    margin-top: -20px;
+    width: 80%;
+    padding: 80px 130px;
+  }
+  .delivery {
+    height: 700px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  .sales__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .contacts__card {
     flex-direction: column;
   }
@@ -941,6 +988,41 @@ body {
   .contacts__form > form > .button-small {
     display: flex;
   }
+  .why__item > img {
+    width: 363px;
+    height: 425px;
+  }
+  .why__item > p {
+    width: 470px;
+    padding: 46px 15px;
+    right: 250px;
+    margin-top: 130px;
+  }
+  .why__wrapper > .why__item:nth-child(2) > p {
+    left: 350px;
+    margin-top: 110px;
+  }
+  .why__wrapper > .why__item:nth-child(2) > img {
+    width: 497px;
+    height: 290px;
+  }
+  .for__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .delivery__content {
+    font-size: 28px;
+    margin-left: -50px;
+  }
+  .delivery {
+    height: 550px;
+  }
+  .delivery__wrapper {
+    padding: 98px 177px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -953,5 +1035,15 @@ body {
 
   .footer__info > ul {
     max-width: 100%;
+  }
+  .delivery {
+    height: 450px;
+  }
+  .delivery__wrapper {
+    padding: 68px 107px;
+  }
+  .delivery__content {
+    font-size: 20px;
+    margin-left: -70px;
   }
 }
