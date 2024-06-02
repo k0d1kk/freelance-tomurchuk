@@ -206,7 +206,7 @@ body {
   text-align: center;
   font-size: 15px;
   color: #fff;
-  background: var(--black);
+  background: var(--red);
   padding: 10px 20px;
   border-top: 4px solid var(--blue);
 }
@@ -218,15 +218,16 @@ body {
   position: relative;
   font-size: 13px;
   padding: 4px 12px;
-  color: #fff;
+  color: var(--black);
   font-weight: bold;
   text-transform: uppercase;
-  background: var(--blue);
+  background: var(--lightWhite);
   border: 2px solid var(--gray);
 }
 
 .cookie_btn:hover {
-  color: #fff;
+  color: var(--black);
+  opacity: 0.8;
 }
 
 .cookie_btn:after,
