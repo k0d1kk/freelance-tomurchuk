@@ -826,7 +826,125 @@ body {
   font-family: 'LatoRegular', sans-serif;
 }
 
+.contacts {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.contacts__card {
+  width: 100%;
+  max-width: 1300px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 14px;
+  position: relative;
+  z-index: 3;
+  background-color: var(--lightWhite);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.contacts__card > iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 480px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.contacts__card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contacts__card-right > div > h2 {
+  font-family: 'MontserratBold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contacts__card-right > div > ul > li > img {
+  width: 15px;
+  height: 15px;
+}
+
+.contacts__card-right > div > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts__card-right > div > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contacts__form {
+  margin-top: 40px;
+}
+
+.contacts__form-title {
+  width: 100%;
+  text-align: center;
+}
+
+.contacts__form > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.contacts__form > form > input {
+  border-radius: 45px;
+  width: 100%;
+  max-width: 770px;
+  padding: 24px 45px;
+  font-family: 'LatoRegular', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  border: 0;
+}
+
+.contacts__form > form > button {
+  border: 0;
+  margin-top: 10px;
+}
+
+.contacts__form > form > .button-small {
+  display: none;
+}
+
 /* media quariess */
+
+@media screen and (max-width: 1024px) {
+  .contacts__card {
+    flex-direction: column;
+  }
+
+  .contacts__card > iframe {
+    max-width: 100%;
+  }
+
+  .contacts__form > form > input {
+    font-size: 22px;
+    padding: 12px 24px;
+  }
+
+  .contacts__form > form > .button {
+    display: none;
+  }
+
+  .contacts__form > form > .button-small {
+    display: flex;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .footer__info {
