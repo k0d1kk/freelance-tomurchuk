@@ -918,7 +918,94 @@ body {
   display: none;
 }
 
+.reviewsPartners-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 20px;
+  column-gap: 90px;
+  width: 100%;
+}
+
+.reviewsPartners-card {
+  background-color: white;
+  width: 100%;
+  max-width: 830px;
+  height: 230px;
+  padding: 20px 40px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 27px;
+}
+
+.reviewsPartners-card > img {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+}
+
+.reviewsPartners-card > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 7px;
+}
+
+.reviewsPartners-card > div > h2 {
+  font-size: 24px;
+  font-family: 'MontserratBold', sans-serif;
+  font-weight: 700;
+}
+
+.reviewsPartners-card > div > p {
+  font-family: 'LatoRegular', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about {
+  position: relative;
+  z-index: 3;
+  margin-top: 140px;
+}
+
+.about-reviews {
+  margin-bottom: 100px;
+  margin-top: 120px;
+}
+
+.about-rev-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about-text {
+  text-align: left;
+  font-family: 'LatoRegular', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  max-width: 900px;
+  margin-right: auto;
+}
 /* media quariess */
+
+@media screen and (max-width: 1280px) {
+  .reviewsPartners-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    justify-items: start;
+  }
+
+  .reviewsPartners-card {
+    width: 89%;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .contacts__card {
@@ -953,5 +1040,35 @@ body {
 
   .footer__info > ul {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .reviewsPartners-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90%;
+    height: auto;
+    max-width: 100%;
+    width: 80%;
+    text-align: center;
+  }
+
+  .reviewsPartners-card > div > h2 {
+    font-size: 20px;
+  }
+
+  .reviewsPartners-card > div > p {
+    font-size: 16px;
+  }
+
+  .reviewsPartners-card > div {
+    text-align: center;
+  }
+
+  .reviewsPartners-card > img {
+    width: 80px;
+    height: 80px;
   }
 }
